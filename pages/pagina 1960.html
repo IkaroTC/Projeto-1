@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TopDrive - 1960</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+  <div class="container py-5">
+    <h1 class="text-center mb-5">Clássicos da Década de 1960</h1>
+    <div class="row car-section align-items-center shadow-sm p-3 mb-5 bg-white rounded">
+      <div class="col-md-6 text-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/RR_Phantom_V_James_Young_Sedanca_de_Ville.jpg" class="img-fluid" alt="O Rolls-Royce Phantom V">
+      </div>
+      <div class="col-md-6">
+        <h2>Rolls-Royce Phantom V</h2>
+        <p> <strong>O Rolls-Royce Phantom V </strong> foi uma limusine de quatro portas produzida pela Rolls-Royce Limited de 1959 a 1968. Baseado no Silver Cloud II, ele compartilha um motor V8 e uma caixa de câmbio automática
+        <p>Rolls-Royce Hydramatic (fabricada sob licença da General Motors pela Rolls-Royce) com esse modelo. A Rolls-Royce construiu o chassi e a transmissão dos carros,
+        <p> com carrocerias feitas principalmente de acordo com projetos padrão pelas encarroçadoras Park Ward, Mulliner Park Ward e James Young, antigos fornecedores absorvidos pela Rolls-Royce
+        <p> Outras encarroçadoras, incluindo Hooper, Henri Chapron e Woodall Nicholson, construíram uma ou duas carrocerias cada sobre o chassi do Phantom V</p>
+      </div>
+    </div>
+
+    <div class="row car-section align-items-center flex-md-row-reverse shadow-sm p-3 mb-5 bg-white rounded">
+      <div class="col-md-6 text-center">
+        <img src="https://cloudfront-us-east-1.images.arcpublishing.com/estadao/QEWCDIGTLVILJCNDBOEIDYJGZE.jpg" class="img-fluid" alt="Ferrari TR">
+      </div>
+      <div class="col-md-6">
+        <h2>Ferrari TR</h2>
+        <p>A<strong> Ferrari TR</strong> ou <strong>Ferrari 250 Testa Rossa</strong>, é um carro de corrida fabricado pela Ferrari entre as décadas de 1950 e 1960. 
+        <p>Estes carros venceram as 24 Horas de Le Mans nos anos de 1958, 1960 e 1961. Estes carros era a versão de competição da linha Ferrari 250, especialmente a lendária 250 GTO</p>
+        <p>Ao todo, trinta e quatro 250 Testa Rossas foram fabricados, a partir de 1956 até 1961. A expressão "Testa Rossa" significa "cabeça vermelha". A mais conhecida, a 250TR, foi produzida entre 1957 e 1958.
+        <p>somente 21 carros foram construídos, sendo 2 carros de fábrica e 19 carros de clientes. Após a Ferrari 250 GTO, a 250 Testa Rossa é o modelo fabricado pela Ferrari mais valioso geralmente avaliada em valores superiores a US$ 8 milhões.
+        <p>Uma Ferrari 250 Testa Rossa 1957, vendida em 20 de agosto de 2011, foi leiloada por um preço recorde de US$16,39 milhões.
+        <p>Este recorde foi superado em 04 de fevereiro de 2014 por outra Ferrari 250 Testa Rossa 1957 leiloada pelo valor de US$ 39,8 milhões. O carro de corrida Mach 5 do personagem Speed Racer foi inspirado nesta Ferrari 250 Testa Rossa.</p>
+      </div>
+    </div>
+    <div class="row car-section align-items-center shadow-sm p-3 mb-5 bg-white rounded">
+      <div class="col-md-6 text-center">
+        <img src="https://images.squarespace-cdn.com/content/v1/653764624aea117e7d78cc60/be29e3f6-19db-4095-9fd1-2c5ce0b28f82/036A9754.jpg" class="img-fluid" alt="Jaguar XK140">
+      </div>
+      <div class="col-md-6">
+        <p>O <strong>Jaguar XK140</strong> é um carro esportivo fabricado pela Jaguar entre 1954 e 1957 como sucessor do XK120. 
+        <p>As atualizações incluíram mais espaço interno, freios aprimorados, direção de pinhão e cremalheira, maior curso da suspensão e amortecedores telescópicos em vez do design mais antigo do braço de alavanca.
+        <p>O XK140 foi introduzido no final de 1954 e vendido como um modelo de 1955. As mudanças externas que o distinguiam do XK120 incluíam pára-choques dianteiro e traseiro mais substanciais com overriders e piscas piscantes 
+        (operados por um interruptor no painel) acima do pára-choque dianteiro.</p>
+      </div>
+    </div>
+    <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.body.insertAdjacentHTML('afterbegin', data);
+      });
+      fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.body.insertAdjacentHTML('beforeend', data);
+      });
+  </script>
+</body>
+</html>

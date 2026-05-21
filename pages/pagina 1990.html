@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museu de Carros - 1990</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+  <div class="container py-5">
+    <h1 class="text-center mb-5">Clássicos da Década de 1990</h1>
+
+
+    <div class="row car-section align-items-center shadow-sm p-3 mb-5 bg-white rounded">
+      <div class="col-md-6 text-center">
+        <img src="https://images-porsche.imgix.net/-/media/250EC08BC48142DEA25BEC9D2144BB0A_2FEBFABD29EB4E878E4D5E6E270E56C1_020_info-slider_993_carrera_s_1997-98_desktop?w=1299&q=85&auto=format" class="img-fluid" alt="Porsche-993">
+      </div>
+      <div class="col-md-6">
+        <h2>Porsche Type 993</h2>
+        <p>O <strong>Porsche Type 993</strong>, ou simplesmente 993, foi a versão do 911 produzida pela Porsche desde final de 1993 até o início de 1998, substituindo o 964.</p> 
+        <p>O encerramento de sua produção marcou o fim dos Porsches refrigerados a ar, criando um lugar especial nas mentes e nos corações dos entusiastas.</p>
+      </div>
+    </div>
+
+
+    <div class="row car-section align-items-center flex-md-row-reverse shadow-sm p-3 mb-5 bg-white rounded">
+      <div class="col-md-6 text-center">
+        <img src="https://cdm.emanualonline.com/blog/wp-content/uploads/2021/05/1988-Silvia-Qs-F.jpg" class="img-fluid" alt="Nissan S15 Silvia">
+      </div>
+      <div class="col-md-6">
+        <h2>Nissan S15 Silvia </h2>
+        <p>O <strong>Nissan Silvia</strong> é um coupé esportivo criado pela Nissan. A primeira apresentação do Nissan Silvia ocorreu no Tokyo Motor Show, em setembro de 1964.
+        <p> O modelo apresentado, foi feito a mão, baseado no Fairlady. Esse modelo, o Nissan Silvia CSP311, foi produzido até 1968, 
+       <p>com apenas 554 exemplares produzidos. Depois foi produzido o modelo S10, o primeiro Silvia, sobre a plataforma "S". Logo depois vieram os modelos S110 e S12.</p>
+      </div>
+    </div>
+
+    <div class="row car-section align-items-center shadow-sm p-3 mb-5 bg-white rounded">
+      <div class="col-md-6 text-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/1996_McLaren_F1_Chassis_No_63_6.1_Front.jpg" class="img-fluid" alt="Mclaren F1">
+      </div>
+      <div class="col-md-6">
+        <h2>McLaren F1</h2>
+        <p>O McLaren F1 é um carro superdesportivo, construído de 1993 até 1998.
+        <p>Por duas vezes bateu o recorde de veículo de rua aspirado mais rápido do mundo, atingindo a velocidade máxima de 386,7 km/h.</p>
+        <p>Tal recorde foi possível graças à sua aerodinâmica revolucionária e a sua leveza de 1140 kg, graças ao chassis fabricado em fibra de carbono e o motor em alumínio.</p>
+      </div>
+    </div>
+
+  </div>
+  <script>
+    fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.body.insertAdjacentHTML('afterbegin', data);
+    });
+    fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.body.insertAdjacentHTML('beforeend', data);
+    });
+  </script>
+</body>
+</html>

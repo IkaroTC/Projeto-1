@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museu de Carros - 1980</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+  <div class="container py-5">
+    <h1 class="text-center mb-5">Clássicos da Década de 1980</h1>
+
+    <div class="row car-section align-items-center shadow-sm p-3 mb-5 bg-white rounded">
+      <div class="col-md-6 text-center">
+        <img src="https://www.backtothefuture.store/cdn/shop/files/STL323065_1.jpg?v=1736450439&width=1946" class="img-fluid" alt="Delorean DMC 12">
+      </div>
+      <div class="col-md-6">
+        <h2>Delorean DMC 12</h2>
+        <p>A <strong>DeLorean Motor Company (DMC)</strong> original foi uma empresa automobilística estadunidense fundada pelo engenheiro John DeLorean em 1975.
+        <p>A companhia fabricou apenas um modelo, o DMC DeLorean, entre 1981 e 1982, ano de falência da empresa.
+        <p>Apesar da sede da empresa ser em Detroit, Estados Unidos, a fábrica se localizava em Dunmurry, Irlanda do Norte (um subúrbio da capital Belfast).</p>
+        <p>O DeLorean ficou mundialmente conhecido por ter sido usado na trilogia De volta para o Futuro de 1985, 1989 e 1990, com os atores Michael J. Fox e Christopher Lloyd.</p>
+      </div>
+    </div>
+
+    <div class="row car-section align-items-center flex-md-row-reverse shadow-sm p-3 mb-5 bg-white rounded">
+      <div class="col-md-6 text-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Porsche_959_silver_at_Auto_Salon_Singen.jpg/1200px-Porsche_959_silver_at_Auto_Salon_Singen.jpg" class="img-fluid" alt="Porsche-959">
+      </div>
+      <div class="col-md-6">
+        <h2>Porsche-959</h2>
+        <p>O <strong>Porsche 959</strong> é um automóvel produzido pela Porsche entre 1986 e 1993, visando prioritariamente à participação em ralis (competia na classe "b"). </p>
+        <p>O modelo chegou a participar inclusive do famoso Paris-Dakar, vencendo a edição de 1986.A fim de atender a exigências da FIA, algumas unidades foram posteriormente adaptadas para uso comum. </p>
+        <p>A Porsche a única montadora a vencer todos os tipos de corridas e campeonatos que disputou.</p>
+      </div>
+    </div>
+
+    <div class="row car-section align-items-center shadow-sm p-3 mb-5 bg-white rounded">
+      <div class="col-md-6 text-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Ferrari_Testarossa_%2814686650099%29.jpg" class="img-fluid" alt="Ferrari Testarossa">
+      </div>
+      <div class="col-md-6">
+        <h2>Ferrari Testarossa</h2>
+        <p>O <strong>Ferrari Testarossa</strong> é um automóvel superdesportivo com motor central-traseiro de 12 cilindros opostos construído pela Ferrari. 
+        <p>Teve a sua produção iniciada em 1984 e foi lançado como o sucessor do Ferrari Berlinetta Boxer.
+        <p> O estúdio Pininfarina desenhou o carro originalmente produzido de 1984 até 1991, e dois restyles foram efetuados pela Ferrari após 1991 com o encerramento de produção do Testarossa e início de produção do Ferrari 512 TR e do Ferrari 512 M que foram produzidos de 1992 até 1996. </p>
+        <p>Mais de 10 mil Testarossas, 512 TR e F512 M foram produzidos, tornando-se um dos modelos mais comuns de Ferrari produzidos, apesar do seu alto preço e do design exótico. Em 1995, um F512 M foi vendido por U$ 220.000.</p>
+      </div>
+    </div>
+  </div>
+  <script>
+    fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.body.insertAdjacentHTML('afterbegin', data);
+    });
+    fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.body.insertAdjacentHTML('beforeend', data);
+    });
+  </script>
+</body>
+</html>
